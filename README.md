@@ -9,7 +9,7 @@
 
 ## Links
 
-- [Webapp on Heroku](https://web-app-2020-fall.herokuapp.com/)
+- [Webapp on Heroku](https://hunt-5.herokuapp.com/)
 - [Source](https://github.com/denisecase/web-app-2020-fall)
 
 ## Prerequisites
