@@ -1,6 +1,6 @@
 /**
- *  Rabbit model
- *  Describes the characteristics of each attribute in a rabbit resource.
+ *  Team model
+ *  Describes the characteristics of each attribute in a Team resource.
  *
  * @author Denise Case <dcase@nwmissouri.edu>
  *
@@ -15,14 +15,14 @@
 // It automatically receives the Sequelize connection parameter.
 
 module.exports = (db, DataTypes) => {
-  db.define('Rabbit', {
+  db.define('Team', {
     // sqlite creates a rowid attribute automatically
     name: {
       type: DataTypes.STRING(30),
       unique: true,
       required: true,
       allowNull: false,
-      defaultValue: 'Rabbit',
+      defaultValue: 'Team',
       validate: {
         is: {
           args: /^[A-Za-z]+$/i, // matches a RegExp
