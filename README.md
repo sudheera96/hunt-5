@@ -12,6 +12,16 @@
 - [Webapp on Heroku](https://hunt-5.herokuapp.com/)
 - [Source](https://github.com/denisecase/web-app-2020-fall)
 
+## Stack
+- Platform: Node (14.0.0)
+- Web Framework: Express
+- View engine: EJS
+- DB: SQL or NoSQL
+- ORM: Sequelize 
+- Web App Host: Heroku
+- Data host: PostgreSQL
+- Coding standards: Prettier/ESlint
+
 ## Prerequisites
 
 - Node.js (comes with npm)
