@@ -1,4 +1,4 @@
-# web-app-2020-fall
+# Hunt-Game5
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/dabde95955984dd08493709c421c7da6)](https://app.codacy.com/gh/denisecase/web-app-2020-fall?utm_source=github.com&utm_medium=referral&utm_content=denisecase/web-app-2020-fall&utm_campaign=Badge_Grade)
 ![GitHub repo size](https://img.shields.io/github/repo-size/denisecase/web-app-2020-fall?style=flat)
@@ -11,6 +11,7 @@
 
 - [Webapp on Heroku](https://hunt-5.herokuapp.com/)
 - [Source](https://github.com/denisecase/web-app-2020-fall)
+- [our repo link](https://github.com/sudheera96/hunt-5)
 
 ## Stack
 - Platform: Node (14.0.0)
@@ -22,6 +23,17 @@
 - Data host: PostgreSQL
 - Coding standards: Prettier/ESlint
 
+## TEAM 
+- We are a team of 6 people working on developing a gaming application in which the users complete a quest,which is finding out specific set of location based on the clues
+- provided. This is a fun game aimed at involving all the students at Northwest Missouri State University to make their respective teams and participate in the competition to - score maximum points based on the level of the difficulty. As we all know due to the ongoing pandemic it is really difficult to get together a group of people but this game - will provide the paltform to get along and meet new people while still maintaining the social distancing. This also helps the students in improving the mental and 
+- physical fitness as the clues will be tricky a person has to walk/jog/run(depends on the interest of the person) to these locations.
+## Team Members 
+- Sri Sudheera chitipolu - S538422@nwmissouri.edu
+- Harika kulkarni - S538299@nwmissouri.edu
+- Sumana Reddy Bathula - S538360@nwmissouri.edu
+- Gundu Pooja - S538295@nwmissouri.edu
+- Ravichander Reddy Goli - S538386@nwmissouri.edu
+- Sai Rohith Gorla - S538416@nwmissouri.edu
 ## Prerequisites
 
 - Node.js (comes with npm)
@@ -39,6 +51,7 @@
 
 Create Heroku app with Heroku Postgres (Hobby Dev - free) add-on.
 
+## Instructions on getting started
 ## Background - How to Start a New App like this
 
 - Run Express-generator with EJS (dynamically create pages with HTML & embedded JS)
