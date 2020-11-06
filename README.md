@@ -177,7 +177,7 @@ heroku open --app web-app-2020-fall
 ```
 
 ## References
-
+- [Reference Repo](https://github.com/denisecase/web-app-2020-fall)
 - [Express API with Postgres](https://www.smashingmagazine.com/2020/04/express-api-backend-project-postgresql/)
 - [See repo](https://github.com/chidimo/Express-API-Template)
 - [Getting Started with Sequelize and Postgres](https://dev.to/nedsoft/getting-started-with-sequelize-and-postgres-emp)
