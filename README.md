@@ -11,7 +11,7 @@
 
 - [Webapp on Heroku](https://hunt-5.herokuapp.com/)
 - [Source](https://github.com/denisecase/web-app-2020-fall)
-- [our repo link](https://github.com/sudheera96/hunt-5)
+- [Our repo link](https://github.com/sudheera96/hunt-5)
 
 ## Stack
 - Platform: Node (14.0.0)
