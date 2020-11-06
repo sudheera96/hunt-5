@@ -176,7 +176,7 @@ heroku logs --app web-app-2020-fall --tail
 heroku open --app web-app-2020-fall
 ```
 
-## References
+## Resources:
 - [Reference Repo](https://github.com/denisecase/web-app-2020-fall)
 - [Express API with Postgres](https://www.smashingmagazine.com/2020/04/express-api-backend-project-postgresql/)
 - [See repo](https://github.com/chidimo/Express-API-Template)
