@@ -15,7 +15,7 @@ const router = express.Router();
 // Manage top-level request first
 
 const appTitle = 'Hunt-Game5';
-const appSubTitle = 'Welcome to Gaming App';
+const appSubTitle = 'Gaming App';
 
 /* GET home page. */
 router.get('/', (req, res) => {
