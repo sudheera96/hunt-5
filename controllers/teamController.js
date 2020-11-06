@@ -98,7 +98,7 @@ exports.deleteItem = async (req, res) => {
 exports.showIndex = async (req, res) => {
   (await db).models.Team.findAll()
     .then((data) => {
-      res.locals.Teams = data;
+      res.locals.teams = data;
       res.render('team/index.ejs', { title: 'Teams', res });
     })
     .catch((err) => {
