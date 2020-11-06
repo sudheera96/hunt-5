@@ -39,8 +39,8 @@
         <tr>
           <th scope="col">ID</th>
           <th scope="col">Name</th>
-          <th scope="col">Age</th>
-          <th scope="col">IsCartoon?</th>
+          <th scope="col">Team Id</th>
+          <th scope="col">IsCreated?</th>
           <th >Action</th>
         </tr>
       </thead>
@@ -49,8 +49,8 @@
         <tr>
           <th scope="row"><%= teams[i].id %></th>
           <td><%= teams[i].name%></td>
-          <td><%= teams[i].age%></td>
-          <td><%= teams[i].isCartoon%></td>
+          <td><%= teams[i].id%></td>
+          <td><%= teams[i].isCreated%></td>
           <td>
             <a class="btn btn-primary details" href="../team/details/<%=teams[i].id%>"><i
                 class="fab fa-sistrix" title="test"></i></a>
