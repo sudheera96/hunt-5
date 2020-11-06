@@ -23,6 +23,9 @@
 - Data host: PostgreSQL
 - Coding standards: Prettier/ESlint
 
+## CI/CD
+-Auto-deploying from our main repo.
+
 ## TEAM 
 - We are a team of 6 people working on developing a gaming application in which the users complete a quest,which is finding out specific set of location based on the clues provided.
 - This is a fun game aimed at involving all the students at Northwest Missouri State University to make their respective teams and participate in the competition to - score maximum points based on the level of the difficulty. As we all know due to the ongoing pandemic it is really difficult to get together a group of people but this game - will provide the paltform to get along and meet new people while still maintaining the social distancing.
@@ -173,7 +176,7 @@ heroku logs --app web-app-2020-fall --tail
 heroku open --app web-app-2020-fall
 ```
 
-## Resources
+## References
 
 - [Express API with Postgres](https://www.smashingmagazine.com/2020/04/express-api-backend-project-postgresql/)
 - [See repo](https://github.com/chidimo/Express-API-Template)
