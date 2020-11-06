@@ -48,7 +48,7 @@ module.exports = (db, DataTypes) => {
     },
   
     
-    teamId: {
+    id: {
             type: DataTypes.INTEGER,
             notEmpty: true,
             primaryKey: true,
