@@ -9,12 +9,12 @@
 
 ## Links
 
-- [Webapp on Heroku](https://hunt-5.herokuapp.com/)
-- [Source](https://github.com/denisecase/web-app-2020-fall)
+- [Hosted Webapp on Heroku](https://hunt-5.herokuapp.com/)
+- [Source Repo](https://github.com/denisecase/web-app-2020-fall)
 - [Our repo link](https://github.com/sudheera96/hunt-5)
 
 ## Stack
-- Platform: Node (14.0.0)
+- Platform: Node (v15.0.1)
 - Web Framework: Express
 - View engine: EJS
 - DB: SQL or NoSQL
