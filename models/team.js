@@ -46,21 +46,20 @@ module.exports = (db, DataTypes) => {
         },
       },
     },
-    age: {
-      type: DataTypes.INTEGER,
-      defaultValue: 1,
-      required: true,
-      validate: {
-        max: {
-          args: 100,
-          msg: 'Age must be 100 or less.',
+  
+    
+    teamId: {
+            type: DataTypes.INTEGER,
+            notEmpty: true,
+            primaryKey: true,
+            allowIncrement: true
+
         },
-        min: {
-          args: 1,
-          msg: 'Age must be 1 or more.',
-        },
-      },
-    },
+    
+    
+    
+    
+    
     isCartoon: {
       type: DataTypes.BOOLEAN,
       defaultValue: true,
