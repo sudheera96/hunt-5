@@ -57,4 +57,36 @@ exports.saveNew = async (req, res) => {
     }
     return res.redirect('/competition');
   };
+  // POST /save/:id
+exports.saveEdit = async (req, res) => {
+    try {
+      const reqId = parseInt(req.params.id, 10);
+      LOG.info(`Save id: ${reqId}`);
+      // don't use super-current language features unless you add babel
+      const updated = (await db).models.Competition.update(req.body, {
+        where: { id: reqId },
+      });
+      LOG.info(`Updated: ${updated}`);
+      return res.redirect('/competition'); // always redirect back for now
+    } catch (err) {
+      return res.status(500).send(err.message);
+    }
+  };
+  
+  // POST /delete/:id
+  exports.deleteItem = async (req, res) => {
+    try {
+      const reqId = parseInt(req.params.id, 10);
+      const deleted = (await db).models.Competition.destroy({
+        where: { id: reqId },
+      });
+      if (deleted) {
+        return res.redirect('/competition');
+      }
+      throw new Error(`${reqId} not found`);
+    } catch (err) {
+      return res.status(500).send(err.message);
+    }
+  };
+  
   
