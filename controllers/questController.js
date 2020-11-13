@@ -136,4 +136,34 @@ exports.showIndex = async (req, res) => {
         });
       });
   };
+  // GET /details/:id
+  exports.showDetails = async (req, res) => {
+    const { id } = req.params;
+    (await db).models. Quest.findByPk(id)
+      .then((data) => {
+        res.locals.quest = data;
+        res.render('quest/details.ejs', { title: 'Quests', res });
+      })
+      .catch((err) => {
+        res.status(500).send({
+          message: `Error retrieving item with id=${id}: ${err.message}`,
+        });
+      });
+  };
+  
+  // GET /edit/:id
+  exports.showEdit = async (req, res) => {
+    const { id } = req.params;
+    (await db).models.Quest.findByPk(id)
+      .then((data) => {
+        res.locals.quest = data;
+        res.render('Quest/edit.ejs', { title: 'Quest', res });
+      })
+      .catch((err) => {
+        res.status(500).send({
+          message: `Error retrieving item with id=${id}: ${err.message}`,
+        });
+      });
+  };
+  
   
