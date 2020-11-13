@@ -88,3 +88,52 @@ exports.saveEdit = async (req, res) => {
       return res.status(500).send(err.message);
     }
   };
+
+// RESPOND WITH VIEWS  --------------------------------------------
+
+// GET to this controller base URI (the default)
+exports.showIndex = async (req, res) => {
+    (await db).models.Quest.findAll()
+      .then((data) => {
+        res.locals.quest = data;
+        res.render('quest/index.ejs', { title: 'Quests', res });
+      })
+      .catch((err) => {
+        res.status(500).send({
+          message: err.message || 'Error retrieving all.',
+        });
+      });
+  };
+  
+  // GET /create
+  exports.showCreate = async (req, res) => {
+    // create a temp quest and add it to the response.locals object
+    // this will provide a quest object to put any validation errors
+    const tempItem = {
+      name: 'QuestName',
+      age: 1,
+      isCartoon: true,
+    };
+    res.locals.quest = tempItem;
+    res.render('quests/create.ejs', { title: 'Quests', res });
+  };
+  
+  // GET /delete/:id
+  exports.showDelete = async (req, res) => {
+    const { id } = req.params;
+    (await db).models.Quests.findByPk(id)
+      .then((data) => {
+        res.locals.quests = data;
+        if (data) {
+          res.render('quests/delete.ejs', { title: 'Quests', res });
+        } else {
+          res.redirect('quests/');
+        }
+      })
+      .catch((err) => {
+        res.status(500).send({
+          message: `Error retrieving item with id=${id}: ${err.message}`,
+        });
+      });
+  };
+  
