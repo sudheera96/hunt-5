@@ -88,5 +88,83 @@ exports.saveEdit = async (req, res) => {
       return res.status(500).send(err.message);
     }
   };
+  // RESPOND WITH VIEWS  --------------------------------------------
+
+// GET to this controller base URI (the default)
+exports.showIndex = async (req, res) => {
+    (await db).models.Competition.findAll()
+      .then((data) => {
+        res.locals.competitions = data;
+        res.render('competition/index.ejs', { title: 'Competitions', res });
+      })
+      .catch((err) => {
+        res.status(500).send({
+          message: err.message || 'Error retrieving all.',
+        });
+      });
+  };
+  
+  // GET /create
+  exports.showCreate = async (req, res) => {
+    // create a temp competition and add it to the response.locals object
+    // this will provide a competition object to put any validation errors
+    const tempItem = {
+      name: 'CompetitionName',
+      age: 1,
+      isCartoon: true,
+    };
+    res.locals.competition = tempItem;
+    res.render('competition/create.ejs', { title: 'Competitions', res });
+  };
+  
+  // GET /delete/:id
+  exports.showDelete = async (req, res) => {
+    const { id } = req.params;
+    (await db).models.Competition.findByPk(id)
+      .then((data) => {
+        res.locals.competition = data;
+        if (data) {
+          res.render('competition/delete.ejs', { title: 'Competitions', res });
+        } else {
+          res.redirect('competition/');
+        }
+      })
+      .catch((err) => {
+        res.status(500).send({
+          message: `Error retrieving item with id=${id}: ${err.message}`,
+        });
+      });
+  };
+  
+  // GET /details/:id
+  exports.showDetails = async (req, res) => {
+    const { id } = req.params;
+    (await db).models.Competition.findByPk(id)
+      .then((data) => {
+        res.locals.competition = data;
+        res.render('competition/details.ejs', { title: 'Competitions', res });
+      })
+      .catch((err) => {
+        res.status(500).send({
+          message: `Error retrieving item with id=${id}: ${err.message}`,
+        });
+      });
+  };
+  
+  // GET /edit/:id
+  exports.showEdit = async (req, res) => {
+    const { id } = req.params;
+    (await db).models.Competition.findByPk(id)
+      .then((data) => {
+        res.locals.competition = data;
+        res.render('Competition/edit.ejs', { title: 'Competition', res });
+      })
+      .catch((err) => {
+        res.status(500).send({
+          message: `Error retrieving item with id=${id}: ${err.message}`,
+        });
+      });
+  };
+  
   
   
