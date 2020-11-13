@@ -76,3 +76,29 @@ module.exports = (db, DataTypes) => {
           },
         },
       },
+dateTimeCreated: {
+        type: DataTypes.DATE,
+        get() {
+            return moment(this.getDataValue('dateTimeCreated')).format('MM/DD/YYYY hh:mm:ss');
+        }
+    },
+    startDateTime: {
+        type: DataTypes.DATE,
+        get() {
+            return moment(this.getDataValue('startDateTime')).format('MM/DD/YYYY hh:mm:ss');
+        }
+    },
+    endDateTime: {
+        type: DataTypes.DATE,
+        get() {
+            return moment(this.getDataValue('endDateTime')).format('MM/DD/YYYY hh:mm:ss');
+        }
+      },
+      
+
+     // isCartoon: {
+//type: DataTypes.BOOLEAN,
+//defaultValue: true,
+//},
+    });
+  };
