@@ -35,3 +35,56 @@ exports.findOne = async (req, res) => {
         });
       });
   };
+ // HANDLE EXECUTE DATA MODIFICATION REQUESTS -----------------------------------
+
+// POST /save
+exports.saveNew = async (req, res) => {
+    // create behaves poorly
+    const context = await db;
+    try {
+      context.models.Quest.create(req.body);
+    } catch (err) {
+      // store the user inputs & the validation errors in res.locals.competition
+      // err includes err.message & err.errors (array of validator msgs)
+      LOG.error('ERROR SAVING QUEST');
+      const item = {};
+      item.questname = req.body.questname;
+      item.startdate = req.body.startdate;
+      item.starttime = req.body.starttime;
+      item.errors = err.errors;
+      res.locals.quest = item;
+      LOG.info(` ERROR ADDING QUEST:${item}`);
+    }
+    return res.redirect('/quest');
+  };
+  // POST /save/:id
+exports.saveEdit = async (req, res) => {
+    try {
+      const reqId = parseInt(req.params.id, 10);
+      LOG.info(`Save id: ${reqId}`);
+      // don't use super-current language features unless you add babel
+      const updated = (await db).models.Quest.update(req.body, {
+        where: { id: reqId },
+      });
+      LOG.info(`Updated: ${updated}`);
+      return res.redirect('/quest'); // always redirect back for now
+    } catch (err) {
+      return res.status(500).send(err.message);
+    }
+  };
+  
+  // POST /delete/:id
+  exports.deleteItem = async (req, res) => {
+    try {
+      const reqId = parseInt(req.params.id, 10);
+      const deleted = (await db).models.Quest.destroy({
+        where: { id: reqId },
+      });
+      if (deleted) {
+        return res.redirect('/quest');
+      }
+      throw new Error(`${reqId} not found`);
+    } catch (err) {
+      return res.status(500).send(err.message);
+    }
+  };
