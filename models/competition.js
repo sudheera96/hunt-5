@@ -46,3 +46,33 @@ module.exports = (db, DataTypes) => {
           },
         },
       },
+ creatorUserId: {
+        type: DataTypes.INTEGER,
+        defaultValue: 1,
+        required: true,
+        validate: {
+          max: {
+            args: 100,
+            msg: 'Age must be 100 or less.',
+          },
+          min: {
+            args: 1,
+            msg: 'Age must be 1 or more.',
+          },
+        },
+      },
+      questId: {
+        type: DataTypes.INTEGER,
+        defaultValue: 1,
+        required: true,
+        validate: {
+          max: {
+            args: 100,
+            msg: 'Age must be 100 or less.',
+          },
+          min: {
+            args: 1,
+            msg: 'Age must be 1 or more.',
+          },
+        },
+      },
