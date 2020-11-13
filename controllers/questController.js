@@ -44,7 +44,7 @@ exports.saveNew = async (req, res) => {
     try {
       context.models.Quest.create(req.body);
     } catch (err) {
-      // store the user inputs & the validation errors in res.locals.competition
+      // store the user inputs & the validation errors in res.locals.quest
       // err includes err.message & err.errors (array of validator msgs)
       LOG.error('ERROR SAVING QUEST');
       const item = {};
