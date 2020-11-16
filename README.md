@@ -192,3 +192,4 @@ heroku open --app web-app-2020-fall
 
 <table>
 <td align="center"><a href="https://github.com/sudheera96"><img src="https://avatars3.githubusercontent.com/u/22390581?s=460&u=e2a3ccb663ae34048a4c2233bb9a530d2de29a9c&v=4" width="100px;" alt=""/><br /><sub><b>Sri Sudheera Chitipolu</b></sub></a><br /><a href="https://github.com/sudheera96/hunt-5/commits?author=sudheera96" title="Code">💻</a> </td>
+<td align="center"><a href="https://github.com/sumana-reddy"><img src="https://avatars1.githubusercontent.com/u/60016064?s=460&u=33898f8b8524f47cd6c76f8ecc4e022cdaa1c118&v=4" width="100px;" alt=""/><br /><sub><b>Sumana Reddy</b></sub></a><br /><a href="https://github.com/sudheera96/hunt-5/commits?author=sumana-reddy" title="Code">💻</a> </td>
