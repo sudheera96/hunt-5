@@ -71,6 +71,13 @@ try {
   LOG.error(`ERROR: ${err.message}`);
 }
 
+//Quest
+try {
+  app.use('/quest', require('./routes/quest.routes'));
+} catch (err) {
+  LOG.error('ERROR: ${err.message}');
+}
+
 // Dr. Hoot - tea
 app.use('/tea', require('./routes/tea.routes'));
 
