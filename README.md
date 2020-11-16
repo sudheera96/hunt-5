@@ -186,3 +186,9 @@ heroku open --app web-app-2020-fall
 - [EJS CRUD repo](https://github.com/mdobydullah/nodejs-crud-with-expressjs-mysql)
 - [MDN Guide to Publishing with Heroku](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/deployment)
 - [Provising Heroku Postgres](https://devcenter.heroku.com/articles/heroku-postgresql#provisioning-heroku-postgres)
+
+
+## Contributors
+
+<table>
+<td align="center"><a href="https://github.com/sudheera96"><img src="https://avatars3.githubusercontent.com/u/22390581?s=460&u=e2a3ccb663ae34048a4c2233bb9a530d2de29a9c&v=4" width="100px;" alt=""/><br /><sub><b>Sri Sudheera Chitipolu</b></sub></a><br /><a href="https://github.com/sudheera96/hunt-5/commits?author=sudheera96" title="Code">💻</a> </td>
