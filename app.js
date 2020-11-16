@@ -64,6 +64,13 @@ try {
   LOG.error(`ERROR: ${err.message}`);
 }
 
+//Competition
+try {
+  app.use('/competition', require('./routes/competition.routes'));
+} catch (err) {
+  LOG.error(`ERROR: ${err.message}`);
+}
+
 // Dr. Hoot - tea
 app.use('/tea', require('./routes/tea.routes'));
 
