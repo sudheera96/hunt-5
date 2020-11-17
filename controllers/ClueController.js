@@ -72,4 +72,15 @@ exports.adduser = function (req, res) {
     });
 
 };
+/* GET Userlist page. */
+exports.userlist = async function (req, res) {
+    try {
+        const users = await User.find()
+        console.log(users)
+        res.render('user/index', { users })
+    } catch (err) {
+        console.log(err)
+        res.status(500).send('failure')
+    }
+};
 
