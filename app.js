@@ -75,7 +75,7 @@ try {
 try {
   app.use('/quest', require('./routes/quest.routes'));
 } catch (err) {
-  LOG.error('ERROR: ${err.message}');
+  LOG.error(`ERROR: ${err.message}`);
 }
 
 // Dr. Hoot - tea
