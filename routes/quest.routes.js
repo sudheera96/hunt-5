@@ -14,7 +14,7 @@
 const router = require('express').Router();
 const controller = require('../controllers/questController.js');
 
-console.info('Starting team routing.');
+console.info('Starting quest routing.');
 
 // -----------------------------------------------------------------------------
 // match each expeced verb + URL request
