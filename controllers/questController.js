@@ -125,9 +125,9 @@ exports.showIndex = async (req, res) => {
       .then((data) => {
         res.locals.quests = data;
         if (data) {
-          res.render('quests/delete.ejs', { title: 'Quests', res });
+          res.render('quest/delete.ejs', { title: 'Quests', res });
         } else {
-          res.redirect('quests/');
+          res.redirect('quest/');
         }
       })
       .catch((err) => {
@@ -157,7 +157,7 @@ exports.showIndex = async (req, res) => {
     (await db).models.Quest.findByPk(id)
       .then((data) => {
         res.locals.quest = data;
-        res.render('Quest/edit.ejs', { title: 'Quest', res });
+        res.render('quest/edit.ejs', { title: 'Quests', res });
       })
       .catch((err) => {
         res.status(500).send({
