@@ -199,7 +199,8 @@ heroku open --app web-app-2020-fall
 
 <td align="center"><a href="https://github.com/GUNDUPOOJA"><img src="https://avatars3.githubusercontent.com/u/60015515?s=460&u=0cf98e92476834a65061f613a12fb92421ab5da8&v=4" width="100px;" alt=""/><br /><sub><b>Pooja Gundu</b></sub></a><br /><a href="https://github.com/sudheera96/hunt-5/commits?author=GUNDUPOOJA" title="Code">💻</a> </td>
 
-<td align="center"><a href="https://github.com/Ravichanderreddy-goli"><img src="https://avatars2.githubusercontent.com/u/60166223?s=460&v=4" width="100px;" alt=""/><br /><sub><b>Ravichander Reddy Goli</b></sub></a><br /><a href="https://github.com/sudheera96/hunt-5/commits?author=Ravichanderreddy-goli" title="Code">💻</a> </td>
+<td align="center"><a href="https://github.com/Ravichanderreddy-goli"><img src="https://avatars2.githubusercontent.com/u/60166223?s=460&v=4" width="100px;" alt=""/><br /><sub><b>Ravichander Reddy Goli</b></sub></a><br /><a href="https://github.com/sudheera96/hunt-5/commits?author=Ravichanderreddy-goli" title="Code">💻</a> <a attid="8742"
+href="https://www.linkedin.com/in/ravichander-reddy-goli-606ab8171/" width="18" height="18"><img src="https://www.linkedin-makeover.com/wp-content/uploads/2014/08/linkedin.png" alt="linkedin" width="18" height="18" class="alignleft size-full wp-image-8742"></a></td>
 
 <td align="center"><a href="https://github.com/SaiGorla"><img src="https://avatars1.githubusercontent.com/u/41150392?s=64&v=4" width="100px;" alt=""/><br /><sub><b>Sai Gorla</b></sub></a><br /><a href="https://github.com/sudheera96/hunt-5/commits?author=SaiGorla" title="Code">💻</a> </td>
 
