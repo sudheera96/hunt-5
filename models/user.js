@@ -9,8 +9,8 @@
  *
  */
 
-module.exports = (sequelize, DataTypes) => {
-  const User = sequelize.define(
+module.exports = (db, DataTypes) => {
+  db.define(
     'User',
     {
       email: {
@@ -25,9 +25,7 @@ module.exports = (sequelize, DataTypes) => {
       },
       last_login: DataTypes.DATE,
     },
-    {
-      // Other model options go here
-    },
-  );
-  return User;
+   
+);
+  // return User;
 };
