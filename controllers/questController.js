@@ -115,15 +115,15 @@ exports.showIndex = async (req, res) => {
       isCartoon: true,
     };
     res.locals.quest = tempItem;
-    res.render('quests/create.ejs', { title: 'Quests', res });
+    res.render('quest/create.ejs', { title: 'Quests', res });
   };
   
   // GET /delete/:id
   exports.showDelete = async (req, res) => {
     const { id } = req.params;
-    (await db).models.Quests.findByPk(id)
+    (await db).models.Quest.findByPk(id)
       .then((data) => {
-        res.locals.quests = data;
+        res.locals.quest = data;
         if (data) {
           res.render('quest/delete.ejs', { title: 'Quests', res });
         } else {
@@ -157,7 +157,7 @@ exports.showIndex = async (req, res) => {
     (await db).models.Quest.findByPk(id)
       .then((data) => {
         res.locals.quest = data;
-        res.render('quest/edit.ejs', { title: 'Quests', res });
+        res.render('quest/edit.ejs', { title: 'Quest', res });
       })
       .catch((err) => {
         res.status(500).send({
