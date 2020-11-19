@@ -157,7 +157,7 @@ exports.showIndex = async (req, res) => {
     (await db).models.Competition.findByPk(id)
       .then((data) => {
         res.locals.competition = data;
-        res.render('Competition/edit.ejs', { title: 'Competition', res });
+        res.render('competition/edit.ejs', { title: 'Competition', res });
       })
       .catch((err) => {
         res.status(500).send({
