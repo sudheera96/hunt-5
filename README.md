@@ -203,7 +203,7 @@ heroku open --app web-app-2020-fall
 href="https://www.linkedin.com/in/ravichander-reddy-goli-606ab8171/" width="18" height="18"><img src="https://www.linkedin-makeover.com/wp-content/uploads/2014/08/linkedin.png" alt="linkedin" width="18" height="18" class="alignleft size-full wp-image-8742"></a></td>
 
 <td align="center"><a href="https://github.com/SaiGorla"><img src="https://avatars1.githubusercontent.com/u/41150392?s=64&v=4" width="100px;" alt=""/><br /><sub><b>Sai Gorla</b></sub></a><br /><a href="https://github.com/sudheera96/hunt-5/commits?author=SaiGorla" title="Code">💻</a> <a attid="8742"
-href="www.linkedin.com/in/sairohith-gorla-3b6954169" width="18" height="18"><img src="https://media-exp1.licdn.com/dms/image/C5103AQGzM058kw3Zvg/profile-displayphoto-shrink_200_200/0?e=1611187200&v=beta&t=L-E7jOWCTTtERTp3sDEWF7fRHy882g7T_bBuIo2lOQE" alt="linkedin" width="18" height="18" class="alignleft size-full wp-image-8742"></a> </td>
+href="https://www.linkedin.com/in/sairohith-gorla-3b6954169/" width="18" height="18"><img src="https://media-exp1.licdn.com/dms/image/C5103AQGzM058kw3Zvg/profile-displayphoto-shrink_200_200/0?e=1611187200&v=beta&t=L-E7jOWCTTtERTp3sDEWF7fRHy882g7T_bBuIo2lOQE" alt="linkedin" width="18" height="18" class="alignleft size-full wp-image-8742"></a> </td>
 
 
 
