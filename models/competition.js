@@ -1,5 +1,5 @@
 /**
- *  Team model
+ *  Competition model
  *  Describes the characteristics of each attribute in a Team resource.
  *
  * @author Ravichander Reddy Goli

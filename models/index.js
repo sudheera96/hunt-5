@@ -65,6 +65,15 @@ module.exports = async () => {
     // Dr. Hoot - tea
     require('./tea')(db, DataTypes);
 
+
+    //quest
+    require('./quest')(db, DataTypes);
+    
+    //competition
+    require('./competition')(db, DataTypes);
+
+    //user
+    require('./user')(db, DataTypes);
     // Blake - game
     require('./game')(db, DataTypes);
     // Varsha - animal
