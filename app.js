@@ -53,7 +53,7 @@ LOG.info('app initial middleware configured');
 // route most requests to the indexRouter
 // route requests that start with /users to the usersRouter
 app.use('/', require('./routes/index'));
-// app.use('/user', require('./routes/users'));
+app.use('/user', require('./routes/users'));
 
 LOG.info('app default routes configured');
 
