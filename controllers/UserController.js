@@ -1,4 +1,3 @@
-
 /**
  *  User controller
  *  Handles requests related to users (see routes)
