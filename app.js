@@ -77,6 +77,12 @@ try {
 } catch (err) {
   LOG.error(`ERROR: ${err.message}`);
 }
+//Player
+try {
+  app.use('/player', require('./routes/player.routes'));
+} catch (err) {
+  LOG.error(`ERROR: ${err.message}`);
+}
 
 // Dr. Hoot - tea
 app.use('/tea', require('./routes/tea.routes'));
@@ -95,6 +101,8 @@ app.use('/animal', require('./routes/animal.routes'));
 
 // Jack - chief
 
+//player
+app.use('/player', require('./routes/player.routes'));
 // Sreenidhi - plant
 app.use('/plant', require('./routes/plant.routes'));
 
