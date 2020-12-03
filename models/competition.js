@@ -96,9 +96,5 @@ dateTimeCreated: {
       },
       
 
-     // isCartoon: {
-//type: DataTypes.BOOLEAN,
-//defaultValue: true,
-//},
     });
   };
